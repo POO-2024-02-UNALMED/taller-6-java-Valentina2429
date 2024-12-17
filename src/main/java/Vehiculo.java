@@ -53,7 +53,7 @@ public class Vehiculo {
     public void setFabricante(Fabricante fabricante) {this.fabricante = fabricante;}
 
     public static int getCantidadVehiculos() {return cantidadVehiculos;}
-    public void setCantidadVehiculos(int cantidadVehiculos) {this.cantidadVehiculos=cantidadVehiculos;}
+    public static void setCantidadVehiculos(int cantidad) {Vehiculo.cantidadVehiculos = cantidad;}
 
     public static String vehiculosPorTipo() {
         return "Automoviles: " + Automovil.cantidadAutomoviles + "\n" +
