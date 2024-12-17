@@ -7,7 +7,6 @@ public class Pais {
         this.nombre = nombre;
     }
 
-    // Getter y Setter
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
@@ -15,7 +14,6 @@ public class Pais {
         int maxVentas = 0;
         Pais paisMasVendedor = null;
     
-        // Recorremos la lista de países para comparar las ventas
         for (Vehiculo v1 : Vehiculo.vehiculos) {
             int contador = 0;
     

@@ -19,7 +19,6 @@ public class Fabricante {
         int maxVentas = 0;
         Fabricante fabricaMayorVentas = null;
     
-        // Recorremos la lista de fabricantes para comparar las ventas
         for (Vehiculo v1 : Vehiculo.vehiculos) {
             int contador = 0;
     
