@@ -1,4 +1,5 @@
 package vehiculos;
+import java.util.ArrayList;
 
 public class Vehiculo {
     protected String placa;
@@ -10,6 +11,8 @@ public class Vehiculo {
     protected String traccion;
     protected Fabricante fabricante;
     public static int cantidadVehiculos = 0;
+    public static ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+
 
     public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, double precio, double peso, String traccion, Fabricante fabricante) {
         this.placa = placa;
@@ -21,6 +24,7 @@ public class Vehiculo {
         this.traccion = traccion;
         this.fabricante = fabricante;
         cantidadVehiculos++;
+        vehiculos.add(this);
     }
 
     // Getters y Setters
