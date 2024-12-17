@@ -16,10 +16,10 @@ public class Pais {
         Pais paisMasVendedor = null;
     
         // Recorremos la lista de países para comparar las ventas
-        for (Vehiculo v1 : vehiculos) {
+        for (Vehiculo v1 : Vehiculo.vehiculos) {
             int contador = 0;
     
-            for (Vehiculo v2 : vehiculos) {
+            for (Vehiculo v2 : Vehiculo.vehiculos) {
                 if (v1.fabricante.getPais().equals(v2.fabricante.getPais())) {
                     contador++;
                 }
